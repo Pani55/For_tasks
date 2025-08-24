@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>Дата</th>
+            <th>Месяц/Неделя</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for obj in objects %}
+        <tr>
+            <td>{{ obj.date_field }}</td>
+            <td>{{ obj.get_month_week }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
